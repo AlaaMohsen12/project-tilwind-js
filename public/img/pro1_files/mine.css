@@ -1,0 +1,122 @@
+@font-face {
+  font-family: fontsAll;
+  src: url(../webfonts/static/Cairo-Bold.ttf);
+}
+
+body {
+  font-family: fontsAll;
+}
+
+body::-webkit-scrollbar {
+  width: 1.5em;
+  background: linear-gradient(#363636 50%, #13ada6 50%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#13ada6 50%, #363636 50%);
+  outline: none;
+}
+
+body::-moz-scrollbar {
+  width: 1em;
+  background: linear-gradient(#000000 50%, #13ada6 50%);
+}
+body::-moz-scrollbar-thumb {
+  background: linear-gradient(#13ada6 50%, #000000ea 50%);
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.contaners {
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+}
+/* header */
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #13ada6;
+  position: absolute;
+  top: 0;
+  left: 350px;
+  transform: skewX(-35deg);
+  -webkit-transform: skewX(-35deg);
+  -moz-transform: skewX(-35deg);
+  -ms-transform: skewX(-35deg);
+  -o-transform: skewX(-35deg);
+}
+
+.mine-logo-nav {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  row-gap: 10px;
+  align-items: center;
+}
+
+.min-text-contain {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 10px;
+  align-items: center;
+}
+
+/* containt */
+.sec-2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #13ada6;
+  position: absolute;
+  top: 0;
+  left: 400px;
+  transform: skewX(35deg);
+  -webkit-transform: skewX(35deg);
+  -moz-transform: skewX(35deg);
+  -ms-transform: skewX(35deg);
+  -o-transform: skewX(35deg);
+}
+
+.slider-gallry {
+  max-width: 720px;
+  margin: auto;
+}
+
+.home-user {
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.count-text {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.text::before {
+  content: "";
+  border-width: 20px;
+  border-style: solid;
+  border-top-color: transparent;
+  border-right-color: rgb(255, 255, 255);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.se4 {
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+  align-content: center;
+}
+
+footer {
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  row-gap: 20px;
+  justify-content: center;
+}
