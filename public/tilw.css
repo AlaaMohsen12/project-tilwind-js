@@ -1089,6 +1089,10 @@ video {
   top: 50%;
 }
 
+.hover\:bg-\[\#13ada5be\]:hover {
+  background-color: #13ada5be;
+}
+
 .hover\:bg-\[\#13ada6\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(19 173 166 / var(--tw-bg-opacity, 1));
